@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android" 
+     		android:scrollbars="vertical" 
+     		android:fillViewport="false"
+     		android:layout_height="fill_parent" 
+     		android:layout_width="fill_parent">
+	<!--
+    <TableLayout android:id="@+id/tableLayout1" android:layout_width="fill_parent" android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android">
+    	
+        <TableRow android:layout_width="fill_parent" android:id="@+id/tableRow1" android:layout_height="wrap_content">
+            <TextView android:id="@+id/labelObjective" android:text="@string/seobjObjective" android:textAppearance="?android:attr/textAppearanceMedium" android:layout_height="wrap_content" android:layout_width="match_parent"></TextView>
+            <EditText android:id="@+id/editObjective" android:layout_height="wrap_content" android:layout_width="match_parent">
+                <requestFocus></requestFocus>
+            </EditText>
+        </TableRow>
+        <TableRow android:id="@+id/tableRow2" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:id="@+id/labelNeedTile" android:text="@string/seobjNeedTile" android:textAppearance="?android:attr/textAppearanceMedium" android:layout_height="wrap_content" android:layout_width="wrap_content"></TextView>
+            <Spinner android:id="@+id/spinNeedTile" android:layout_width="wrap_content" android:layout_height="wrap_content"></Spinner>
+        </TableRow>
+        <TableRow android:id="@+id/tableRow3" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <CheckBox android:id="@+id/checkNeedItems" android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="Need Items"></CheckBox>
+            <CheckBox android:id="@+id/checkNeedObjectives" android:layout_height="wrap_content" android:text="@string/seobjNeedObj" android:layout_width="wrap_content"></CheckBox>
+        </TableRow>
+        <TableRow android:id="@+id/tableRow4" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:id="@+id/labelAction" android:text="@string/seobjAction" android:textAppearance="?android:attr/textAppearanceMedium" android:layout_height="wrap_content" android:layout_width="wrap_content"></TextView>
+            <Spinner android:id="@+id/spinAction" android:layout_width="wrap_content" android:layout_height="wrap_content"></Spinner>
+        </TableRow>
+        <TableRow android:id="@+id/tableRow5" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:id="@+id/labelPreActionText" android:text="@string/seobjPreAction" android:textAppearance="?android:attr/textAppearanceMedium" android:layout_height="wrap_content" android:layout_width="wrap_content"></TextView>
+            <EditText android:id="@+id/editPreActionText" android:layout_width="wrap_content" android:layout_height="wrap_content"></EditText>
+        </TableRow>
+        <TableRow android:id="@+id/tableRow6" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:id="@+id/labelPostActionText" android:text="@string/seobjPostAction" android:textAppearance="?android:attr/textAppearanceMedium" android:layout_height="wrap_content" android:layout_width="wrap_content"></TextView>
+            <EditText android:id="@+id/editPostActionText" android:layout_width="wrap_content" android:layout_height="wrap_content"></EditText>
+        </TableRow>
+        <TableRow android:id="@+id/tableRow7" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:id="@+id/labelGainHealth" android:text="@string/seobjGainHealth" android:textAppearance="?android:attr/textAppearanceMedium" android:layout_height="wrap_content" android:layout_width="wrap_content"></TextView>
+            <RatingBar android:id="@+id/ratingGainHealth" android:layout_width="wrap_content" android:layout_height="wrap_content"></RatingBar>
+        </TableRow>
+        <TableRow android:id="@+id/tableRow8" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:id="@+id/labelGainItem" android:text="@string/seobjGainItem" android:textAppearance="?android:attr/textAppearanceMedium" android:layout_height="wrap_content" android:layout_width="wrap_content"></TextView>
+            <Spinner android:id="@+id/spinGainItem" android:layout_width="wrap_content" android:layout_height="wrap_content"></Spinner>
+        </TableRow>
+        <TableRow android:id="@+id/tableRow9" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:id="@+id/labelEnableTile" android:text="@string/seobjEnableTile" android:textAppearance="?android:attr/textAppearanceMedium" android:layout_height="wrap_content" android:layout_width="wrap_content"></TextView>
+            <Spinner android:id="@+id/spinEnableTile" android:layout_width="wrap_content" android:layout_height="wrap_content"></Spinner>
+        </TableRow>
+        <TableRow android:id="@+id/tableRow10" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <Button android:text="@string/seobjCreate" android:id="@+id/buttonSaveObj" android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+            <Button android:text="@string/seobjDiscard" android:id="@+id/buttonDiscardObj" android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+        </TableRow>        
+    </TableLayout>
+    			-->
+   <RelativeLayout android:id="@+id/tableLayout1" android:layout_width="fill_parent" android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android">
+    	
+   		<TextView 	android:id="@+id/labelObjective" 
+   					android:text="@string/seobjObjective" 
+   					android:textAppearance="?android:attr/textAppearanceMedium" 
+   					android:layout_height="wrap_content" 
+   					android:layout_width="wrap_content">
+   		</TextView>
+        <EditText 	android:id="@+id/editObjective" 
+        			android:layout_toRightOf="@id/labelObjective"
+        			android:layout_height="wrap_content"        			 
+        			android:layout_width="fill_parent">
+                <requestFocus></requestFocus>
+        </EditText>
+
+        <TextView 	android:id="@+id/labelNeedTile" 
+        			android:text="@string/seobjNeedTile" 
+        			android:textAppearance="?android:attr/textAppearanceMedium"
+        			android:layout_below="@id/editObjective"
+        			android:layout_alignLeft="@id/labelObjective" 
+        			android:layout_height="wrap_content" 
+        			android:layout_width="wrap_content">
+        </TextView>
+        <Spinner 	android:id="@+id/spinNeedTile" 
+        			android:layout_below="@id/editObjective"
+        			android:layout_alignLeft="@id/editObjective" 
+	       			android:layout_width="fill_parent" 
+        			android:layout_height="wrap_content">
+        </Spinner>
+
+        <CheckBox 	android:id="@+id/checkNeedItems" 
+        			android:layout_below="@id/spinNeedTile"
+        			android:layout_alignLeft="@id/labelNeedTile" 
+        			android:layout_height="wrap_content" 
+        			android:layout_width="wrap_content" 
+        			android:text="Need Items">
+        </CheckBox>
+        <CheckBox 	android:id="@+id/checkNeedObjectives" 
+        			android:layout_below="@id/spinNeedTile"
+        			android:layout_alignLeft="@id/spinNeedTile" 
+        			android:layout_height="wrap_content" 
+        			android:text="@string/seobjNeedObj" 
+        			android:layout_width="wrap_content">
+        </CheckBox>
+        
+		<TextView 	android:id="@+id/labelAction" 
+        			android:layout_below="@id/checkNeedItems"
+        			android:layout_alignLeft="@id/checkNeedItems" 
+					android:text="@string/seobjAction" 
+					android:textAppearance="?android:attr/textAppearanceMedium" 
+					android:layout_height="wrap_content" 
+					android:layout_width="wrap_content">
+		</TextView>
+        <Spinner 	android:id="@+id/spinAction" 
+        			android:layout_below="@id/checkNeedItems"
+        			android:layout_alignLeft="@id/checkNeedObjectives" 
+        			android:layout_width="fill_parent" 
+        			android:layout_height="wrap_content">
+        </Spinner>
+
+		<TextView 	android:id="@+id/labelPreActionText" 
+        			android:layout_below="@id/spinAction"
+        			android:layout_alignLeft="@id/checkNeedItems" 
+					android:text="@string/seobjPreAction" 
+					android:textAppearance="?android:attr/textAppearanceMedium" 
+					android:layout_height="wrap_content" 
+					android:layout_width="wrap_content">
+		</TextView>
+		<EditText 	android:id="@+id/editPreActionText" 
+        			android:layout_below="@id/spinAction"
+        			android:layout_alignLeft="@id/spinAction" 
+					android:layout_width="fill_parent" 
+					android:layout_height="wrap_content">
+		</EditText>
+
+        <TextView 	android:id="@+id/labelPostActionText" 
+        			android:layout_below="@id/editPreActionText"
+        			android:layout_alignLeft="@id/labelPreActionText" 
+        			android:text="@string/seobjPostAction" 
+        			android:textAppearance="?android:attr/textAppearanceMedium" 
+        			android:layout_height="wrap_content" 
+        			android:layout_width="wrap_content">
+        </TextView>
+        <EditText 	android:id="@+id/editPostActionText" 
+        			android:layout_below="@id/editPreActionText"
+        			android:layout_alignLeft="@id/editPreActionText" 
+        			android:layout_width="fill_parent" 
+        			android:layout_height="wrap_content">
+        </EditText>
+
+
+		<TextView 	android:id="@+id/labelGainHealth" 
+        			android:layout_below="@id/editPostActionText"
+        			android:layout_alignLeft="@id/labelPreActionText" 
+					android:text="@string/seobjGainHealth" 
+					android:textAppearance="?android:attr/textAppearanceMedium" 
+					android:layout_height="wrap_content" 
+					android:layout_width="wrap_content">
+		</TextView>
+		<RatingBar 	android:id="@+id/ratingGainHealth" 
+        			android:layout_below="@id/editPostActionText"
+        			android:layout_alignLeft="@id/editPostActionText" 
+					android:layout_width="wrap_content" 
+					android:layout_height="wrap_content">
+		</RatingBar>
+        
+        
+        <TextView 	android:id="@+id/labelGainItem" 
+        			android:text="@string/seobjGainItem" 
+        			android:layout_below="@id/ratingGainHealth"
+        			android:layout_alignLeft="@id/labelGainHealth" 
+        			android:textAppearance="?android:attr/textAppearanceMedium" 
+        			android:layout_height="wrap_content" 
+        			android:layout_width="wrap_content">
+        </TextView>
+		<Spinner 	android:id="@+id/spinGainItem" 
+        			android:layout_below="@id/ratingGainHealth"
+        			android:layout_alignLeft="@id/ratingGainHealth" 
+					android:layout_width="wrap_content" 
+					android:layout_height="wrap_content">
+		</Spinner>
+
+		<TextView 	android:id="@+id/labelEnableTile" 
+        			android:layout_below="@id/spinGainItem"
+        			android:layout_alignLeft="@id/labelGainItem" 
+					android:text="@string/seobjEnableTile" 
+					android:textAppearance="?android:attr/textAppearanceMedium" 
+					android:layout_height="wrap_content" 
+					android:layout_width="wrap_content">
+		</TextView>
+		<Spinner 	android:id="@+id/spinEnableTile" 
+        			android:layout_below="@id/spinGainItem"
+        			android:layout_alignLeft="@id/spinGainItem" 
+					android:layout_width="wrap_content" 
+					android:layout_height="wrap_content">
+		</Spinner>
+        
+    	<Button 	android:text="@string/seobjCreate" 
+        			android:layout_below="@id/spinEnableTile"
+        			android:layout_alignLeft="@id/labelEnableTile" 
+    				android:id="@+id/buttonSaveObj" 
+    				android:layout_width="wrap_content" 
+    				android:layout_height="wrap_content">
+    	</Button>
+        <Button 	android:text="@string/seobjDiscard" 
+        			android:layout_below="@id/spinEnableTile"
+        			android:layout_alignLeft="@id/spinEnableTile" 
+        			android:id="@+id/buttonDiscardObj" 
+        			android:layout_width="wrap_content" 
+        			android:layout_height="wrap_content">
+        </Button>
+    
+	</RelativeLayout>        
+</ScrollView>

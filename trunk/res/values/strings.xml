@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, ZimpjsonActivity!</string>
+    <string name="app_name">Zimp</string>
+    
+    
+    <!-- Scene Editor Strings -->
+    <string name="labelSceneName"><b>Scene Name</b> <i>(No Spaces Allowed)</i>:  </string>
+    <string name="seMapLabel"><b>Map:</b></string>
+    <string name="seItemsLabel"><b>Items:</b></string>
+    <string name="seDevCardsLabel"><b>Dev Cards:</b></string>
+    <string name="seChoosePrompt">Choose one</string>
+
+    <string name="seInfo">1. Info</string>
+    <string name="seTiles">2. Tiles</string>
+    <string name="seMap">3. Map</string>
+    <string name="seObjectives">4. Objectives</string>
+    <string name="seRules">5. Rules</string>
+    <string name="sePlotItems">6. Generate</string>
+
+    <string name="seStartTile">Start Map Tile</string>
+    <string name="seDestTile">Destination Map Tile</string>
+    <string name="seMapLayout">Map Layout</string>
+
+    <string name="seObjective"><b>Objective :</b>   <i>None </i>  (Tap to Edit/Define) </string>
+    <string name="seMaxHitPoints"><b>Max Hit Points : </b></string>
+    <string name="seStartHitPoints"><b>Start Hit Points : </b></string>
+    <string name="seDiscardRounds"><b>Times DevCards discarded : </b></string>
+	<string name="seLabelStartTime"> <b>Start Time : </b> </string>
+	<string name="seLabelEndTime"> <b>End Time : </b> </string>
+    
+    <string name="seCreateNewMap">Create a new map</string>
+    <string name="seCreateNewItemSet">Create a new item set</string>
+    <string name="seCreateNewCardsSet">Create a new dev cards set</string>
+    <string-array name="seMapLayoutSpinner_array">
+        <item>Random</item>
+        <item>Predefined</item>
+    </string-array>
+    <string name="seErrorEmpty"> cannot be empty.</string>
+    <string name="seErrorAlpha"> can only be alphabetic.</string>
+	<string name="seErrorNum"> can only be numeric.</string>
+
+    <string name="seErrorSceneDesc"><b>Tab (Info): Scene Description </b></string>
+    <string name="seErrorSceneName"><b>Tab (Info): Scene Name </b></string>
+    <string name="seErrorStoryName"><b>Tab (Info): Story Name </b></string>
+
+	<string name="seobjObjective">Objective Summary </string>
+	<string name="seobjNeedTile"> Trigger Tile </string>
+	<string name="seobjNeedObj">  Need Objectives </string>
+	<string name="seobjNeedItem"> Need Objectives </string>
+	<string name="seobjAction"> Action  </string>
+	<string name="seobjPreAction"> Pre Action Text </string>
+	<string name="seobjPostAction"> Post Action Text </string>
+	<string name="seobjGainHealth"> Gain Health </string>
+	<string name="seobjGainItem"> Gain Item </string>
+	<string name="seobjEnableTile"> Enable Tile </string>
+	<string name="seobjCreate"> <b>Save Objective </b></string>
+	<string name="seobjDiscard"> <b>Discard Objective</b> </string>
+	
+	<string name="seobjDialogObjTextEmpty"> Objective text cannot be empty </string>
+	<string name="segenGenerate"> Generate </string>
+	<string name="segenPlay"> Play this Scenario </string>
+ 
+ 	<string-array name="obj_ActionArray">
+        <item>NoAction</item>
+        <item>DrawCard</item>
+        <item>FightZombies</item>
+        <item>ReduceHealth</item>
+        <item>DropItem</item>
+    </string-array>
+</resources>

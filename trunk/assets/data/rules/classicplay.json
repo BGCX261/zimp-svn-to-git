@@ -1,0 +1,80 @@
+{
+	"MetaInfo": {
+		"ScenarioName":"Classic Play",
+		"ScenarioBasePath":"/data/scenes/classicplay",
+		"ScenarioDescription":"The dead walk the earth. You must search the house for the Evil Temple, and find the zombie totem. Then take the totem outside and bury it in the Graveyard,	all before the clock strikes midnight"
+	},
+	"Rules": {
+		"MaxHP" : 10,
+		"StartHP" : 6,
+		"MaxCarryItems" : 2,
+		"MaxDiscardRounds" : 3,
+		"StartTime" : 9,
+		"EndTime" : 12,
+		"HoursPerDiscard" : 1,
+		"MinutesPerActivity" : 7,
+		"StartTile":"Foyer",
+		"DestTile":"Graveyard",
+		"PlotItems": [
+			{
+				"Item":"Totem",
+				"FoundIn":"EvilTemple",
+				"FindPretext":"Do you wish to search for totem?",
+				"FindPosttext":"You have found the zombie totem. Bury in graveyard to save yourself!",
+				"UsedIn" :"Graveyard",
+				"UsePreText":"Do you wish to bury the totem in graveyard?",
+				"UsePostText":"You have stopped the zombie creation from the graveyard!",
+				"MissingReqdText": "Need the Totem from the Evil Temple",
+				"IsPlotFinale" : true				
+			}
+		],
+		"Objectives" : [
+			{
+				"ObjectiveText" : "Objective is to find the totem found in evil temple",
+				"NeedItems" : false,
+				"NeedTile" : true,
+				"NeededTile" : "EvilTemple",
+				"NeedHealth" : 1,
+				"NeedTime" : 12,
+				"NeedObjectives" : false,
+				"PreActionText" : "Do you wish to search for totem?",
+				"Action" : "DrawCard",
+				"ActionCount" : 1,
+				"PostActionText" : "You have found the zombie totem. Bury in graveyard to save yourself!",
+				"AchieveItems" : true,
+				"AchievedItems" : [{ 
+								"ItemName" : "Totem"
+								}],
+				"AchieveTile" : false,
+				"AchieveHealth" : 0,
+				"AchieveTime" : 0,
+				"AchieveText" : "Objective 1 complete"
+			},
+			{
+				"ObjectiveText" : "Objective is to bury the totem found in evil temple into the graveyard",
+				"NeedItems" : false,
+				"NeedTile" : true,
+				"NeededTile" : "GraveYard",
+				"NeedHealth" : 1,
+				"NeedTime" : 12,
+				"NeedObjectives" : true,
+				"NeededObjectives" : [ 0 ],
+				"PreActionText" : "Do you wish to bury the totem in graveyard?",
+				"Action" : "DrawCard",
+				"ActionCount" : 1,
+				"PostActionText" : "You have stopped the zombie creation from the graveyard!",
+				"AchieveItems" : false,
+				"AchieveTile" : false,
+				"AchieveHealth" : 0,
+				"AchieveTime" : 0,
+				"AchieveText" : "Objective 2 complete"
+			}
+		]
+	},
+	"Paths": {
+		"ItemJsonPath":"/data/scenes/classicplay/classicitems.json",
+		"DevCardsJsonPath":"/data/scenes/classicplay/classicdevcards.json",
+		"MapTilesJsonPath":"/data/scenes/classicplay/classicmap.json"
+		}
+}
+		

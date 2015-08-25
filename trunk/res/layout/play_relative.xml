@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--  Alternative implementation without the map adapter -->
+<RelativeLayout android:id="@+id/Container"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:padding="0dip" android:layout_margin="0dip">
+	<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:id="@+id/statusPane"
+		android:background="#000"
+		android:orientation="vertical" android:layout_width="160dip"
+		android:layout_height="match_parent" android:layout_alignParentRight="true">
+		<Button android:layout_height="40dip"
+			android:layout_width="match_parent" 
+			android:id="@+id/suicide"
+			android:text="Commit Suicide"
+			android:clickable="false"
+			android:layout_alignParentTop="true"
+			android:layout_alignParentRight="true">
+		</Button>
+		<ImageView 
+			android:id="@+id/healthicon"
+			android:layout_width="25dip"
+			android:layout_height="25dip"
+			android:layout_below="@id/suicide"
+			android:layout_alignParentLeft="true"
+			android:padding="2dip"
+			android:src="@drawable/heart"
+		/>
+		<com.zimp.play.TextProgressBar
+			android:id="@+id/healthBar" 
+			android:layout_width="fill_parent"
+			android:layout_height="25dip"
+			android:layout_below="@id/suicide"
+			android:layout_toRightOf="@id/healthicon"
+			android:progress="0"
+			android:max="10"
+			android:padding="2dip"			
+			style="?android:attr/progressBarStyleHorizontal"			
+		/>
+		<ImageView 
+			android:id="@+id/timeicon"
+			android:layout_width="25dip"
+			android:layout_height="25dip"
+			android:layout_below="@id/healthBar"
+			android:layout_alignParentLeft="true"
+			android:padding="2dip"
+			android:src="@drawable/time"
+		/>
+		<com.zimp.play.TextProgressBar
+			android:id="@+id/timeBar" 
+			android:layout_width="fill_parent"
+			android:layout_height="25dip"
+			android:layout_below="@id/healthBar"
+			android:layout_toRightOf="@id/timeicon"
+			android:progress="0"
+			android:max="27"
+			android:padding="2dip"
+			style="?android:attr/progressBarStyleHorizontal"			
+		/>
+
+		<ImageButton android:id="@+id/map"
+			android:layout_alignParentLeft="true"
+			android:layout_below="@id/timeBar"
+			android:layout_width="30dip"
+			android:layout_height="30dip"
+			android:scaleType="fitCenter"
+			android:background="@drawable/map"
+			/>
+		<ImageButton android:id="@+id/objectives"
+			android:layout_alignParentRight="true"
+			android:layout_below="@id/timeBar"
+			android:layout_width="30dip"
+			android:layout_height="30dip"
+			android:scaleType="fitCenter"
+			android:background="@drawable/target"
+			/>
+		<Button android:layout_height="40dip"
+			android:layout_width="wrap_content" 
+			android:id="@+id/rest"
+			android:layout_below="@id/timeBar"
+			android:layout_centerHorizontal="true"
+			android:text=" Rest " 
+			android:src="@drawable/icon">
+		</Button>
+		<ImageView android:id="@+id/devcard" android:src="@drawable/icon"
+			android:layout_below="@+id/rest" android:layout_alignLeft="@id/map"
+			android:layout_alignParentRight="true" android:layout_height="130dip"
+			android:layout_width="match_parent">
+		</ImageView>
+		<Button android:id="@+id/itemone" 
+			android:layout_below="@+id/devcard"
+			android:layout_alignLeft="@+id/devcard"
+			android:clickable="true" 
+			android:text="No Item"
+			android:textSize="10dp"
+			android:layout_height="40dp" 
+			android:layout_width="80dp">
+		</Button>
+		<Button	android:layout_height="40dip"
+			android:layout_width="80dip" 
+			android:id="@+id/itemtwo"
+			android:textSize="10dp"
+			android:layout_below="@+id/devcard" 
+			android:layout_toRightOf="@+id/itemone"
+			android:layout_alignParentRight="true" 
+			android:text="No Item">
+		</Button>		
+		<Button android:id="@+id/soundButton"
+			android:layout_below="@id/itemone"
+			android:layout_alignParentRight="true"
+			android:layout_width="20dp"
+			android:layout_height="20dp"
+			android:background="@drawable/audiohigh" 
+		/>
+	</RelativeLayout>
+	<RelativeLayout android:id="@+id/MapContainer"
+		android:layout_width="fill_parent" android:layout_height="fill_parent"
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		android:padding="0dip" android:layout_margin="0dip"
+		android:layout_toLeftOf="@id/statusPane"
+	>
+		<ImageView 
+			android:id="@+id/mapTile"
+            android:layout_height="300dp"
+            android:layout_width="300dp"
+            android:layout_margin="10dp"
+            android:layout_centerInParent="true"
+		/>
+            <!--   android:background="@drawable/maptileloading" 
+            android:scaleType="centerInside"            
+            android:layout_centerInParent="true"
+            
+            
+            --> 
+		<ImageButton 
+			android:id="@+id/playerCenter"
+			android:layout_width="64dp"
+			android:layout_height="64dp"
+			android:layout_centerInParent="true"
+			android:background="@drawable/ownposition"
+		/>				
+		<ImageButton 
+			android:id="@+id/rotateIcon"
+			android:layout_width="64dp"
+			android:layout_height="64dp"
+			android:layout_centerInParent="true"
+			android:background="@drawable/rotate"
+			android:visibility="invisible"
+		/>				
+		<ImageButton 
+			android:id="@+id/rotateok"
+			android:layout_width="64dp"
+			android:layout_height="64dp"
+			android:layout_alignParentTop="true"
+			android:layout_alignParentLeft="true"
+			android:background="@drawable/ok"
+			android:visibility="invisible"
+		/>				
+		<!--  Exits aligned as per the  -->
+		<ImageButton
+			android:id="@+id/topExit"
+			android:layout_width="40dp"
+			android:layout_height="40dp"
+			android:layout_centerHorizontal="true"
+			android:layout_alignTop="@id/mapTile"
+			android:background="@drawable/exittop"
+			android:visibility="invisible" 
+			android:soundEffectsEnabled="true" 
+			/>
+		<ImageButton
+			android:id="@+id/bottomExit"
+			android:layout_width="40dp"
+			android:layout_height="40dp"
+			android:layout_centerHorizontal="true"
+			android:layout_alignBottom="@id/mapTile"
+			android:background="@drawable/exitbottom" 
+			android:visibility="invisible" 
+			android:soundEffectsEnabled="true" 
+			/>
+			
+		<ImageButton
+			android:id="@+id/leftExit"
+			android:layout_width="40dp"
+			android:layout_height="40dp"
+			android:layout_centerVertical="true"
+			android:layout_alignLeft="@id/mapTile"
+			android:background="@drawable/exitleft" 
+			android:visibility="invisible"
+			android:soundEffectsEnabled="true" 
+			/>
+		<ImageButton
+			android:id="@+id/rightExit"
+			android:layout_width="40dp"
+			android:layout_height="40dp"
+			android:layout_centerVertical="true"
+			android:layout_alignRight="@id/mapTile"
+			android:background="@drawable/exitright" 
+			android:visibility="invisible" 
+			android:soundEffectsEnabled="true" 
+			/>
+		<!--  No Exits -->
+		<ImageButton
+			android:id="@+id/topNoExit"
+			android:layout_width="40dp"
+			android:layout_height="40dp"
+			android:clickable="false"
+			android:layout_centerHorizontal="true"
+			android:layout_alignTop="@id/mapTile"
+			android:background="@drawable/noexit" 
+			/>
+		<ImageButton
+			android:id="@+id/bottomNoExit"
+			android:layout_width="40dp"
+			android:layout_height="40dp"
+			android:clickable="false"
+			android:layout_centerHorizontal="true"
+			android:layout_alignBottom="@id/mapTile"
+			android:background="@drawable/noexit" 
+			/>
+		<ImageButton
+			android:id="@+id/leftNoExit"
+			android:layout_width="40dp"
+			android:layout_height="40dp"
+			android:clickable="false"
+			android:layout_centerVertical="true"
+			android:layout_alignLeft="@id/mapTile"
+			android:background="@drawable/noexit" 
+			/>
+		<ImageButton
+			android:id="@+id/rightNoExit"
+			android:layout_width="40dp"
+			android:layout_height="40dp"
+			android:clickable="false"
+			android:layout_centerVertical="true"
+			android:layout_alignRight="@id/mapTile"
+			android:background="@drawable/noexit" 
+			/>
+			
+		<!--  Ghost Player to demonstrate entering into another room -->
+		<ImageButton
+			android:id="@+id/playerTop"
+			android:layout_width="64dp"
+			android:layout_height="64dp"
+			android:clickable="false"
+			android:layout_centerHorizontal="true"
+			android:visibility="invisible" 
+			android:layout_alignTop="@id/mapTile"
+			android:background="@drawable/ownposition" 
+			/>
+		<ImageButton
+			android:id="@+id/playerBottom"
+			android:layout_width="64dp"
+			android:layout_height="64dp"
+			android:clickable="false"
+			android:layout_centerHorizontal="true"
+			android:visibility="invisible" 
+			android:layout_alignBottom="@id/mapTile"
+			android:background="@drawable/ownposition" 
+			/>
+		<ImageButton
+			android:id="@+id/playerLeft"
+			android:layout_width="64dp"
+			android:layout_height="64dp"
+			android:clickable="false"
+			android:layout_centerVertical="true"
+			android:visibility="invisible" 
+			android:layout_alignLeft="@id/mapTile"
+			android:background="@drawable/ownposition" 
+			/>
+		<ImageButton
+			android:id="@+id/playerRight"
+			android:layout_width="64dp"
+			android:layout_height="64dp"
+			android:clickable="false"
+			android:layout_centerVertical="true"
+			android:visibility="invisible" 
+			android:layout_alignRight="@id/mapTile"
+			android:background="@drawable/ownposition" 
+			/>
+
+	</RelativeLayout>	
+</RelativeLayout>
+

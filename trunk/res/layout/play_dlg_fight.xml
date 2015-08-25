@@ -1,0 +1,215 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/fight_root"
+              android:layout_width="wrap_content"
+              android:layout_height="fill_parent"
+              android:padding="5dp"
+              >
+              
+	<!--  Left Pane for Player -->           
+    <RelativeLayout 
+    		android:id="@+id/fight_leftrel"
+              android:layout_width="120dp"
+              android:layout_height="fill_parent"
+              android:layout_alignParentLeft="true"
+              android:gravity="center_horizontal|center_vertical"
+			>
+	    <TextView android:id="@+id/fight_player"
+	              android:layout_width="120dp"
+	              android:layout_height="wrap_content"
+	              android:layout_margin="3dp"
+	              android:gravity="center_horizontal"
+	              android:textSize="20dp"
+	              android:textColor="#FFF"
+	              android:text="Player"
+	              />
+		<!--  Player Health -->           
+	    <ImageView android:id="@+id/fight_health"
+	    	android:layout_height="32dp"
+	        android:layout_width="32dp"
+	        android:layout_marginLeft="5dp"
+	        android:layout_below="@id/fight_player"
+	        android:src="@drawable/heart"
+	        android:scaleType="centerInside"
+	               />
+	    <ImageView android:id="@+id/fight_health_single"
+	    	android:layout_height="32dp"
+	        android:layout_width="32dp"
+	        android:layout_below="@id/fight_player"
+	        android:layout_toRightOf="@id/fight_health"
+	        android:src="@drawable/neon0"	        
+	        android:scaleType="centerInside"
+	               />
+	    <ImageView android:id="@+id/fight_health_double"
+	    	android:layout_height="32dp"
+	        android:layout_width="32dp"
+	        android:layout_below="@id/fight_player"
+	        android:layout_toRightOf="@id/fight_health_single"
+	        android:src="@drawable/neon0"	        
+	        android:scaleType="centerInside"
+	               />
+		<!--  Attack for Player -->           
+	    <ImageView android:id="@+id/fight_attackicon"
+	    	android:layout_height="32dp"
+	        android:layout_width="32dp"
+	        android:layout_alignLeft="@id/fight_health"
+	        android:layout_below="@id/fight_health"
+	        android:src="@drawable/attackicon"
+	        android:scaleType="centerInside"
+	               />
+	    <ImageView android:id="@+id/fight_attack"
+	    	android:layout_height="32dp"
+	        android:layout_width="32dp"
+	        android:layout_below="@id/fight_health_double"
+	        android:layout_alignLeft="@id/fight_health_double"
+	        android:src="@drawable/neon1"	        
+	        android:scaleType="centerInside"
+	               />
+	     <View
+   					android:id="@+id/fight_leftsep"
+       				android:layout_below="@id/fight_attack"        				
+        			android:layout_height="2dp"
+       				android:layout_width="fill_parent"
+        			android:background="#FF909090" />
+        
+        <!--  Post Fight -->
+	    <TextView android:id="@+id/fight_playerResult"
+	              android:layout_width="120dp"
+	              android:layout_height="wrap_content"
+	              android:layout_margin="3dp"
+	              android:gravity="center_horizontal"
+	              android:layout_below="@id/fight_leftsep"
+	              android:textSize="10dp"
+	              android:textColor="#FFF"
+	              android:text="After Fight"
+	    />
+		<!--  Player Health finally -->           
+	    <ImageView android:id="@+id/fight_endhealth"
+	    	android:layout_height="32dp"
+	        android:layout_width="32dp"
+	        android:layout_marginLeft="5dp"
+	        android:layout_below="@id/fight_playerResult"
+	        android:src="@drawable/heart"
+	        android:scaleType="centerInside"
+	               />
+	    <ImageView android:id="@+id/fight_endhealth_single"
+	    	android:layout_height="32dp"
+	        android:layout_width="32dp"
+	        android:layout_below="@id/fight_playerResult"
+	        android:layout_toRightOf="@id/fight_endhealth"
+	        android:src="@drawable/neon0"	        
+	        android:scaleType="centerInside"
+	               />
+	    <ImageView android:id="@+id/fight_endhealth_double"
+	    	android:layout_height="32dp"
+	        android:layout_width="32dp"
+	        android:layout_below="@id/fight_playerResult"
+	        android:layout_toRightOf="@id/fight_endhealth_single"
+	        android:src="@drawable/neon0"	        
+	        android:scaleType="centerInside"
+	               />
+    </RelativeLayout>
+    
+    
+    
+    <!--  Right Side of the Pane related to Zombies -->
+    <RelativeLayout 
+    		android:id="@+id/fight_rightrel"
+              android:layout_width="120dp"
+              android:layout_height="fill_parent"
+              android:layout_alignParentRight="true"
+              android:layout_alignParentTop="true"
+              android:gravity="center_horizontal|center_vertical"
+			>
+	    <TextView android:id="@+id/fight_zombie"
+	              android:layout_width="120dp"
+	              android:layout_height="wrap_content"
+	              android:layout_margin="3dp"
+	              android:gravity="center_horizontal"
+	              android:textSize="20dp"
+	              android:textColor="#FFF"
+	              android:text="Zombie"
+	              />
+		<!--  Zombie Health -->           
+	    <ImageView android:id="@+id/zombie_health"
+	    	android:layout_height="32dp"
+	        android:layout_width="32dp"
+	        android:layout_marginLeft="5dp"
+	        android:layout_below="@id/fight_zombie"
+	        android:src="@drawable/heart"
+	        android:scaleType="centerInside"
+	               />
+	    <ImageView android:id="@+id/zombie_health_single"
+	    	android:layout_height="32dp"
+	        android:layout_width="32dp"
+	        android:layout_below="@id/fight_zombie"
+	        android:layout_toRightOf="@id/zombie_health"
+	        android:src="@drawable/neon0"	        
+	        android:scaleType="centerInside"
+	               />
+	    <ImageView android:id="@+id/zombie_health_double"
+	    	android:layout_height="32dp"
+	        android:layout_width="32dp"
+	        android:layout_below="@id/fight_zombie"
+	        android:layout_toRightOf="@id/zombie_health_single"
+	        android:src="@drawable/neon0"	        
+	        android:scaleType="centerInside"
+	               />
+		<!--  Attack for Zombie -->           
+	    <ImageView android:id="@+id/zombie_attackicon"
+	    	android:layout_height="32dp"
+	        android:layout_width="32dp"
+	        android:layout_alignLeft="@id/zombie_health"
+	        android:layout_below="@id/zombie_health"
+	        android:src="@drawable/attackicon"
+	        android:scaleType="centerInside"
+	               />
+	    <ImageView android:id="@+id/zombie_attack"
+	    	android:layout_height="32dp"
+	        android:layout_width="32dp"
+	        android:layout_below="@id/zombie_health"
+	        android:layout_alignLeft="@id/zombie_health_double"
+	        android:src="@drawable/neon0"	        
+	        android:scaleType="centerInside"
+	               />
+	     <View
+   					android:id="@+id/fight_rightsep"
+       				android:layout_below="@id/zombie_attackicon"        				
+        			android:layout_height="2dp"
+       				android:layout_width="fill_parent"
+        			android:background="#FF909090" />
+        
+        <!--  Post Fight -->
+	    <TextView android:id="@+id/fight_zombieResult"
+	              android:layout_width="120dp"
+	              android:layout_height="wrap_content"
+	              android:layout_margin="3dp"
+	              android:layout_centerHorizontal="true"
+	              android:gravity="center_horizontal"
+	              android:layout_below="@id/fight_rightsep"
+	              android:textSize="10dp"
+	              android:textColor="#FFF"
+	              android:text="After Fight"
+	    />
+		<!--  Zombie Health finally -->           
+	    <ImageView android:id="@+id/fight_zombiedead"
+	    	android:layout_height="32dp"
+	        android:layout_width="32dp"
+            android:gravity="center_horizontal"
+            android:layout_centerHorizontal="true"
+	        android:layout_below="@id/fight_zombieResult"
+	        android:src="@drawable/zombieicon"
+	               />
+    </RelativeLayout>
+
+
+
+    <ImageView android:id="@+id/fight_image"
+               android:layout_height="fill_parent"
+               android:layout_width="fill_parent"
+               android:layout_toRightOf="@id/fight_leftrel"
+               android:layout_toLeftOf="@id/fight_rightrel"
+               android:src="@drawable/fightresult"               
+               android:scaleType="centerInside"
+               />
+               
+</RelativeLayout>

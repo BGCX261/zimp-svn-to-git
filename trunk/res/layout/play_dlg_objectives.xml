@@ -1,0 +1,166 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/objectives_top"
+              android:layout_width="wrap_content"
+              android:layout_height="fill_parent">
+<ScrollView 
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="wrap_content"
+              android:layout_height="fill_parent"
+              >
+        <!--  Scenario Information -->      
+        <RelativeLayout android:id="@+id/dl_obj_info_rel"
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content">
+	        <TextView
+	        	android:id="@+id/dl_obj_scenename"
+	        	android:layout_alignParentLeft="true"
+	        	android:layout_alignParentTop="true"
+		        android:layout_width="fill_parent"
+		        android:layout_height="fill_parent"	
+		        android:textColor="@color/redStart"
+		        android:textStyle="bold"		        	
+	        />
+		    <ImageView android:id="@+id/dl_obj_sceneimage"
+		    	android:layout_alignParentLeft="true"
+		    	android:layout_below="@id/dl_obj_scenename"
+		        android:layout_height="60dip"
+		        android:layout_width="80dip"
+		        android:layout_margin="2dip"
+		    />
+		    <TextView android:id="@+id/dl_obj_scenetext" 
+		    		android:text="The dead walk the earth. You must search the house for the Evil Temple, and find the zombie totem. Then take the totem outside and bury it in the Graveyard, all before the clock strikes midnight"
+		    		android:layout_width="fill_parent"
+		    		android:layout_height="wrap_content"
+		    		android:layout_toRightOf="@id/dl_obj_sceneimage"
+		    		android:layout_below="@id/dl_obj_scenename"
+		    		android:textSize="9dp"	
+		    			/>
+		</RelativeLayout>
+		
+        <!--  Objective 0 -->      
+        <LinearLayout android:id="@+id/dl_obj_rel0"
+        	android:layout_below="@id/dl_obj_info_rel"
+            android:orientation="vertical"
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content">
+        
+		    <CheckBox android:id="@+id/dl_obj_check0"
+		    	android:layout_alignParentTop="true"
+		    	android:layout_alignParentLeft="true"
+		    	android:clickable="false"
+		    	android:layout_width="fill_parent"
+		    	android:layout_height="wrap_content"
+		    	android:textSize="10dip"
+		    	android:visibility="invisible" 
+		    	/>
+		    <TextView android:id="@+id/dl_obj_req0"
+		    	android:layout_width="fill_parent"
+		    	android:layout_height="wrap_content"
+		    	android:layout_alignParentLeft="true"
+		    	android:textSize="10dip"
+		    	android:visibility="invisible"/>
+		</LinearLayout>
+
+        <!--  Objective 1 -->      
+        <LinearLayout android:id="@+id/dl_obj_rel1"
+        	android:layout_below="@id/dl_obj_rel0"
+              android:orientation="vertical"
+	    	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content">
+        
+		    <CheckBox android:id="@+id/dl_obj_check1"
+		    	android:layout_alignParentTop="true"
+		    	android:layout_alignParentLeft="true"
+		    	android:clickable="false"
+		    	android:layout_width="fill_parent"
+		    	android:layout_height="wrap_content"
+		    	android:textSize="10dip"
+		    	android:visibility="invisible" 
+		    	/>
+		    <TextView android:id="@+id/dl_obj_req1"
+		    	android:layout_width="fill_parent"
+		    	android:layout_height="wrap_content"
+		    	android:layout_alignParentLeft="true"
+		    	android:textSize="10dip"
+		    	android:visibility="invisible"/>
+		</LinearLayout>
+
+        <!--  Objective 2 -->      
+        <LinearLayout android:id="@+id/dl_obj_rel2"
+        	android:layout_below="@id/dl_obj_rel1"
+              android:orientation="vertical"
+	    	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content">
+        
+		    <CheckBox android:id="@+id/dl_obj_check2"
+		    	android:layout_alignParentTop="true"
+		    	android:layout_alignParentLeft="true"
+		    	android:clickable="false"
+		    	android:textSize="10dip"
+		    	android:layout_width="fill_parent"
+		    	android:layout_height="wrap_content"
+		    	android:visibility="gone" 
+		    	/>
+		    <TextView android:id="@+id/dl_obj_req2"
+		    	android:layout_width="fill_parent"
+		    	android:layout_height="wrap_content"
+		    	android:layout_alignParentLeft="true"
+		    	android:textSize="10dip"
+		    	android:visibility="gone"/>
+		</LinearLayout>
+
+        <!--  Objective 3 -->      
+        <LinearLayout android:id="@+id/dl_obj_rel3"
+        	android:layout_below="@id/dl_obj_rel2"
+              android:orientation="vertical"
+	    	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content">
+        
+		    <CheckBox android:id="@+id/dl_obj_check3"
+		    	android:layout_alignParentTop="true"
+		    	android:layout_alignParentLeft="true"
+		    	android:clickable="false"
+		    	android:textSize="10dip"
+		    	android:layout_width="fill_parent"
+		    	android:layout_height="wrap_content"
+		    	android:visibility="gone" 
+		    	/>
+		    <TextView android:id="@+id/dl_obj_req3"
+		    	android:layout_width="fill_parent"
+		    	android:layout_height="wrap_content"
+		    	android:layout_alignParentLeft="true"
+		    	android:textSize="10dip"
+		    	android:visibility="gone"/>
+		</LinearLayout>
+
+        <!--  Objective 4 -->      
+        <LinearLayout android:id="@+id/dl_obj_rel4"
+        	android:layout_below="@id/dl_obj_rel3"
+              android:orientation="vertical"
+	    	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content">
+        
+		    <CheckBox android:id="@+id/dl_obj_check4"
+		    	android:layout_alignParentTop="true"
+		    	android:layout_alignParentLeft="true"
+		    	android:textSize="10dip"
+		    	android:clickable="false"
+		    	android:layout_width="fill_parent"
+		    	android:layout_height="wrap_content"
+		    	android:visibility="gone" 
+		    	/>
+		    <TextView android:id="@+id/dl_obj_req4"
+		    	android:layout_width="fill_parent"
+		    	android:layout_height="wrap_content"
+		    	android:layout_alignParentLeft="true"
+		    	android:textSize="10dip"
+		    	android:visibility="gone"/>
+		</LinearLayout>
+
+</RelativeLayout>
+</ScrollView>
+</RelativeLayout>

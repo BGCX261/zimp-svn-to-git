@@ -1,0 +1,148 @@
+[
+	{
+		"9PM" : {
+				"type" : "plain",
+				"message" : "You try hard not to wet your self!"
+				},
+		"10PM" : {
+				"type" : "item"
+				},
+		"11PM" : {
+				"type" : "zombie",
+				"count" : 6 
+				},
+		"item" : "Oil",
+		"image" : "dev_card1.png"
+	},
+	{
+		"9PM" : {
+				"type" : "plain",
+				"message" : "Your body shivers involuntarily"
+				},
+		"10PM" : {
+				"type" : "health",
+				"message" : "You feel spark of hope",
+				"count" : 1
+				},
+		"11PM" : {
+				"type" : "zombie",
+				"count" : 4
+				},
+		"item" : "Candles",
+		"image" : "dev_card2.png"
+	},
+	{
+		"9PM" : {
+				"type" : "health",
+				"message" : "Candybar in your pocket",
+				"count" : 1
+				},
+		"10PM" : {
+				"type" : "item"
+				},
+		"11PM" : {
+				"type" : "zombie",
+				"count" : 4
+				},
+		"item" : "Cola",
+		"image" : "dev_card3.png"
+	},
+	{
+		"9PM" : {
+				"type" : "zombie",
+				"count" : 3
+				},
+		"10PM" : {
+				"type" : "plain",
+				"message" : "You hear terrible screams"
+				},
+		"11PM" : {
+				"type" : "zombie",
+				"count" : 5
+				},
+		"item" : "Chain Saw",
+		"image" : "dev_card4.png"
+	},
+	{
+		"9PM" : {
+				"type" : "health",
+				"message" : "slip on nasty goo",
+				"count" : -1
+				},
+		"10PM" : {
+				"type" : "zombie",
+				"count" : 4
+				},
+		"11PM" : {
+				"type" : "plain",
+				"message" : "smell of blood is in the air"
+				},
+		"item" : "Golf Club",
+		"image" : "dev_card5.png"
+	},
+	{
+		"9PM" : {
+				"type" : "item"
+				},
+		"10PM" : {
+				"type" : "zombie",
+				"count" : 5
+				},
+		"11PM" : {
+				"type" : "health",
+				"message" : "Your soul isnt wanted here",
+				"count" : -1
+				},
+		"item" : "Grisly Femur",
+		"image" : "dev_card6.png"
+	},
+	{
+		"9PM" : {
+				"type" : "zombie",
+				"count" : 4
+				},
+		"10PM" : {
+				"type" : "health",
+				"message" : "A bat poops in your eye",
+				"count" : -1
+				},
+		"11PM" : {
+				"type" : "zombie",
+				"count" : 6
+				},
+		"item" : "Machete",
+		"image" : "dev_card7.png"
+	},
+	{
+		"9PM" : {
+				"type" : "item"
+				},
+		"10PM" : {
+				"type" : "zombie",
+				"count" : 4
+				},
+		"11PM" : {
+				"type" : "health",
+				"message" : "Something icky in your mouth",
+				"count" : -1
+				},
+		"item" : "Board with Nails",
+		"image" : "dev_card8.png"
+	},
+	{
+		"9PM" : {
+				"type" : "zombie",
+				"count" : 4
+				},
+		"10PM" : {
+				"type" : "health",
+				"message" : "You sense your impending doom",
+				"count" : -1
+				},
+		"11PM" : {
+				"type" : "item"
+				},
+		"item" : "Gasoline",
+		"image" : "dev_card9.png"
+	}
+]

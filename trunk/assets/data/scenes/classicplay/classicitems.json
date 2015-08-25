@@ -1,0 +1,158 @@
+[
+	{
+		"name" : "Golf Club",
+		"image" : "item_golf_club.png",
+		"text" : "It's hard to whack a ball with one of these, but it's easy to whack a zombie",
+		"uses" : [
+			{
+				"type" : "single",
+				"limitedUse" : false,
+				"useType" : "attack",
+				"addInAttack" : true,
+				"attack" : 2
+			}
+		]
+	},
+	{
+		"name" : "Gasoline",
+		"image" : "item_gasoline.png",
+		"text" : "Can be combined with the Candles to destroy a group of zombies without giving them a chance to deal damage. Can be combined with Chain Saw to give two more Chain Saw uses. May only be used once.",
+		"limitedUse" : true,
+		"noOfUsesLeft" : 9999,
+		"uses" : [
+			{
+				"type" : "combine",
+				"combineItem" : "Candles",
+				"useType" : "attack",
+				"addInAttack" : true,
+				"attack" : 9999
+			},
+			{
+				"type" : "combine",
+				"combineItem" : "Chain Saw",
+				"useType":"enhance",
+				"noOfUsesLeft" : 2,
+				"dependentItem" : true
+			}
+		]
+	},
+	{
+		"name" : "Machete",
+		"image" : "item_machete.png",
+		"limitedUse" : false,
+		"text" : "A fine slashing weapon for cutting through zombies",
+		"uses" : [
+			{
+				"type" : "single",
+				"useType" : "attack",
+				"addInAttack" : true,
+				"attack" : 3
+			}
+		]
+	},
+	{
+		"name" : "Cola",
+		"image" : "item_cola.png",
+		"limitedUse" : true,
+		"noOfUsesLeft" : 9999,
+		"uses" : [
+			{
+				"type" : "single",
+				"useType" : "health",
+				"addInHealth" : true,
+				"health" : 2
+			}
+		]
+	},
+	{
+		"name" : "Oil",
+		"image" : "item_oil.png",
+		"text" : "Throw at zomies as you run away to avoid taking damage from running away. Can also be combined with the candles to destroy a group of zombies without giving them a chance to deal damage. May only be used once.",
+		"limitedUse" : true,
+		"noOfUsesLeft" : 9999,
+		"uses" : [
+			{
+				"type" : "single",
+				"useType" : "runaway",
+				"addInHealth" : true,
+				"health" : 1
+			},
+			{
+				"type" : "combine",
+				"combineItem" : "Candles",
+				"useType" : "attack",
+				"addInAttack" : true,
+				"attack" : 9999
+			}
+		]
+	},
+	{
+		"name" : "Board with Nails",
+		"image" : "item_board_with_nail.png",
+		"text" : "A simple, yet effective weapon",
+		"uses" : [
+			{
+				"type" : "single",
+				"limitedUse" : false,
+				"useType" : "attack",
+				"addInAttack" : true,
+				"attack" : 2
+			}
+		]
+	},
+	{
+		"name" : "Chain Saw",
+		"image" : "item_chain_saw.png",
+		"text" : "Sweeeet! The Chain Saw only has enough fuel to be used in two battles. Can be combined with Gasoline to give you two more uses. You may carry an empty chainsaw, and use it again if you find gasoline.",
+		"limitedUse" : true,
+		"noOfUsesLeft" : 2,
+		"uses" : [
+			{
+				"type" : "single",
+				"useType" : "attack",
+				"addInAttack" : true,
+				"attack" : 4
+			},
+			{
+				"type" : "combine",
+				"combineItem" : "Gasoline",
+				"noOfUsesLeft" : 4,
+				"useType" : "enhance",
+				"addInAttack" : true,
+				"attack" : 4
+			}
+		]
+	},
+	{
+		"name" : "Grisly Femur",
+		"image" : "item_grisly_femur.png",
+		"limitedUse" : false,
+		"text" : "Hey, it might have been your uncle's leg, but now you can use it to bash zombies.",
+		"uses" : [
+			{
+				"type" : "single",
+				"useType" : "attack",
+				"addInAttack" : true,
+				"attack" : 2
+			}
+		]
+	},
+	{
+		"name" : "Candles",
+		"image" : "item_candle.png",
+		"limitedUse" : false,
+		"text" : "Can be combined with either Oil or Gasoline to destroy a group of Zombies without giving them a chance to deal any damage. The Candles can be used more than once.",
+			"uses" : [
+			{
+				"type" : "combine",
+				"combineItem" : "Oil",
+				"dependentItem" : true
+			},
+			{
+				"type" : "combine",
+				"combineItem" : "Gasoline",
+				"dependentItem" : true
+			}
+		]
+	}
+]

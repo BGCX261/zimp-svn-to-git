@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TableLayout android:id="@+id/mainTop" 
+	xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="500dp"
+    
+    android:stretchColumns="1">
+    <TableRow>
+    	<RelativeLayout 
+    		android:id="@+id/imagelayout"
+    		android:layout_width="262dp"
+    		android:layout_height="250dp"
+        	android:layout_alignParentLeft="true"> 
+				<ImageView android:id="@+id/imageView1"
+					android:layout_height="fill_parent" 
+		        	android:layout_width="fill_parent"
+		        	android:src="@drawable/zimploading"
+		        	android:adjustViewBounds="true" 
+		        	android:scaleType="fitXY">
+		       	</ImageView>
+       	</RelativeLayout>       	
+    	
+         <RelativeLayout 
+         	android:id="@+id/relativeLayout1"
+         	android:layout_marginLeft="10dp"
+         	android:layout_width="fill_parent" 
+         	android:layout_height="fill_parent">
+
+			<Button android:id="@+id/mainPlay"
+				android:layout_width="fill_parent" 
+				android:layout_height="50dp"
+				android:layout_alignParentLeft="true"
+				android:layout_alignParentTop="true"
+				android:text="Classic Play"
+				/>
+			<Button android:id="@+id/mainStory"
+				android:layout_width="fill_parent" 
+				android:layout_height="50dp"
+				android:layout_alignParentLeft="true"
+				android:layout_below="@id/mainPlay"
+				android:text="Zombie Stories"
+				/>				
+			<Button android:id="@+id/mainDifficulty"
+				android:layout_width="fill_parent" 
+				android:layout_height="50dp"
+				android:layout_alignParentLeft="true"
+				android:layout_below="@id/mainStory"
+				android:text="Easy"
+				/>
+			<ImageButton android:id="@+id/mainDiffImage"
+				android:layout_width="40dp" 
+				android:layout_height="40dp"
+				android:layout_alignParentLeft="true"
+				android:layout_marginTop="5dip"
+				android:layout_below="@id/mainStory"
+				android:layout_marginLeft="10dp"
+				android:scaleType="fitXY"
+				/>
+			<Button android:id="@+id/mainHowto"
+				android:layout_width="fill_parent" 
+				android:layout_height="50dp"
+				android:layout_alignParentLeft="true"
+				android:layout_below="@id/mainDifficulty"
+				android:text="How to Play"
+				/>
+			<Button android:id="@+id/mainUnderTheHood"
+				android:layout_width="fill_parent" 
+				android:layout_height="50dp"
+				android:layout_alignParentLeft="true"
+				android:layout_below="@id/mainHowto"
+				android:text="Under the Hood"
+				/>
+			<Button android:id="@+id/mainExit"
+				android:layout_width="fill_parent" 
+				android:layout_height="50dp"
+				android:layout_alignParentLeft="true"
+				android:layout_below="@id/mainUnderTheHood"
+				android:text="Exit"
+				/>
+          </RelativeLayout>
+    </TableRow>
+</TableLayout>
+

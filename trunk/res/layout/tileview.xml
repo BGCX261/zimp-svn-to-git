@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="match_parent"
+	android:layout_height="match_parent">
+	<ImageView android:src="@drawable/icon" android:id="@+id/tile"
+		android:layout_alignParentLeft="true"
+		android:layout_alignParentBottom="true" android:layout_alignParentTop="true"
+		android:layout_width="480px" android:layout_height="480px"></ImageView>
+	<ImageView android:layout_height="40px" android:layout_width="wrap_content"
+		android:id="@+id/health" android:layout_alignParentTop="true"
+		android:layout_toRightOf="@+id/tile"
+		android:layout_alignParentRight="true" android:src="@drawable/icon"></ImageView>
+	<ImageView android:layout_height="40px" android:layout_width="wrap_content"
+		android:id="@+id/time" android:layout_below="@+id/health"
+		android:layout_alignLeft="@+id/health"
+		android:layout_alignParentRight="true" android:src="@drawable/icon"></ImageView>
+	<ImageView android:id="@+id/devcard" android:src="@drawable/icon"
+		android:layout_below="@+id/time" android:layout_alignLeft="@+id/time"
+		android:layout_alignParentRight="true" android:layout_height="280px"
+		android:layout_width="wrap_content"></ImageView>
+	<ImageView android:id="@+id/itemone" android:layout_below="@+id/devcard"
+		android:layout_alignLeft="@+id/devcard"
+		android:src="@drawable/icon" android:layout_height="120px" android:layout_width="160px"></ImageView>
+	<ImageView android:layout_height="120px" android:layout_width="160px"
+		android:id="@+id/itemtwo" android:layout_below="@+id/devcard"
+		android:layout_toRightOf="@+id/itemone"
+		android:layout_alignParentRight="true" android:src="@drawable/icon"></ImageView>
+
+</RelativeLayout>

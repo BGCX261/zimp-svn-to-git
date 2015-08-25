@@ -1,0 +1,7 @@
+1. Rules:
+   a. DestTile
+   		- No longer required after objectives are present.
+   		- Change in both game rules and scene editor. 
+   		- Discuss with Aalap and finalise.
+   b. Scenario Image
+   		- Require to enable defaults in case someone does not wish to use his own image.

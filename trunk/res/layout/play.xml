@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/Container"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="fill" >
+
+    <HorizontalScrollView
+        android:id="@+id/hsv"
+        android:layout_width="800px"
+        android:layout_height="fill_parent" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent" >
+
+            <GridView
+                android:id="@+id/Map"
+                android:layout_width="800px"
+                android:layout_height="match_parent"
+                android:numColumns="4" >
+            </GridView>
+        </RelativeLayout>
+    </HorizontalScrollView>
+
+    <ZoomControls
+        android:id="@+id/zoomControl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true" />
+
+</RelativeLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="500dp"
+    
+    android:stretchColumns="1">
+    <TableRow>
+    	<RelativeLayout 
+    		android:id="@+id/imagelayout"
+    		android:layout_width="262dp"
+    		android:layout_height="250dp"
+        	android:layout_alignParentLeft="true"> 
+				<ImageView android:id="@+id/imageView1"
+					android:layout_height="fill_parent" 
+		        	android:layout_width="fill_parent"
+		        	android:src="@drawable/zimploading"
+		        	android:adjustViewBounds="true" 
+		        	android:scaleType="fitXY">
+		       	</ImageView>
+       	</RelativeLayout>       	
+    	
+         <RelativeLayout 
+         	android:id="@+id/relativeLayout1"
+         	android:layout_marginLeft="10dp"
+       		android:background="#ffffffff"         	
+         	android:layout_width="fill_parent" 
+         	android:layout_height="250dp">
+         	    <ListView android:id="@android:id/list"
+				android:layout_width="wrap_content"
+				android:layout_height="fill_parent"
+		        android:divider="#000000"
+		        android:dividerHeight="1dp"
+		        android:footerDividersEnabled="false"			
+				android:listSelector="@drawable/list_selector"
+				 />
+          </RelativeLayout>
+         
+    </TableRow>
+    
+</TableLayout>
+
